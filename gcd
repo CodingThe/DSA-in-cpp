@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -7,12 +8,24 @@ int gcd(int a,int b){
     }
     return gcd(b,a%b);
 }
+int wgcd(int a,int b){
+  while(a!=b){
+      if(a>b){
+          a=a-b;
+      }
+      else{
+          b=b-a;
+      }
+  }
+  return a;
+}
 int main()
 {
     int a,b;
     cin>>a>>b;
     int w=gcd(a,b);
     cout<<w<<endl;
-
+    int wr=wgcd(a,b);
+    cout<<wr<<endl;
     return 0;
 }

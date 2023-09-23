@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+void my_str(char str[]){
+    for(int i=0;str[i]!='\0';i++){
+    cout<<str[i];
+}
+}
+int main()
+{
+char str[]="stingo";
+cout<<str<<endl;
+my_str(str);
+string gg="gyangigs";
+cout<<"\n"<<gg<<endl;
+
+    return 0;
+}
